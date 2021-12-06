@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+  margin: 0  auto;
+  padding: 0;
+}
+
+.calendar{
+  width: 45rem;
+  height:52rem;
+  background-color: transparent;
+}
+.month{
+  text-transform: uppercase;
+  width: 100%;
+  height: 12.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: floralwhite;
+  color: seagreen;
+  padding: 0.2rem;
+  text-align: center;
+  text-shadow:0 0.3rem, .5rem rgba(0, 0, 0, 0.5);
+}
+.month i{
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.month h2{
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+.month p{
+  font-size: 1.6rem;
+}
+.weekdays{
+  width:100%;
+  height:5rem;
+  padding:0 0.4rem;
+display: flex;
+align-items: center;
+}
+.weekdays div{
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem/7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+.days{
+  width: 100%;
+  padding: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.days div{
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem/7);
+  height:5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+.days div:hover:not(today){
+  background-color: whitesmoke;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.prev, .next{
+  opacity: 0.5;
+}
+.today{
+  background-color: plum;
+  border-radius: 50%;
+}
